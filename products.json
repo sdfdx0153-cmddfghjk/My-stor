@@ -1,0 +1,44 @@
+[
+  {
+    "id": "flame-diffuser",
+    "name": "Flame Aroma Diffuser",
+    "category": "diffuser",
+    "price": 79,
+    "compareAt": 99,
+    "image": "/images/variant-cloud.jpg",
+    "badge": "Bestseller",
+    "rating": 4.9,
+    "reviews": 2314,
+    "tagline": "Fireside glow, anywhere.",
+    "description": "Our signature diffuser. Ultrasonic mist lit by layered amber LEDs creates a flame effect so real it instantly turns a cold room cozy.",
+    "bullets": [
+      "12-hour runtime · 250 ml tank",
+      "Ultra-quiet under 30 dB",
+      "Auto shut-off when water runs dry",
+      "Seven flame hues from ember amber to glacier blue"
+    ],
+    "stock": 34,
+    "affiliateLink": "https://www.wed2c.com/"
+  },
+  {
+    "id": "onyx-edition",
+    "name": "Ember Onyx Edition",
+    "category": "diffuser",
+    "price": 89,
+    "compareAt": 109,
+    "image": "/images/variant-onyx.jpg",
+    "badge": "New",
+    "rating": 4.9,
+    "reviews": 186,
+    "tagline": "The limited matte-black run.",
+    "description": "Same best-selling flame effect, finished in a deep matte black shell with smoked detailing for a richer luxury look.",
+    "bullets": [
+      "Matte-black premium finish",
+      "12-hour runtime",
+      "Whisper-quiet operation",
+      "Auto shut-off safety"
+    ],
+    "stock": 19,
+    "affiliateLink": "https://www.wed2c.com/"
+  }
+]

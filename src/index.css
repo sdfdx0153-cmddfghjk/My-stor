@@ -1,0 +1,107 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Fraunces", Georgia, "Times New Roman", serif;
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
+
+  /* Light Apple-style system */
+  --color-blue: #0071e3;
+  --color-bluedark: #0064c8;
+  --color-ink: #1d1d1f;
+  --color-sub: #6e6e73;
+  --color-mist: #f5f5f7;
+  --color-line: #d9d9de;
+
+  /* Dark accent band (spotlight) */
+  --color-deep: #0b0a07;
+  --color-soot: #171410;
+  --color-bone: #f6f1e9;
+  --color-smoke: #a49a8d;
+  --color-ash: #6d6459;
+  --color-flame: #ff7a2f;
+  --color-ember: #ffb15e;
+  --color-heat: #b3400f;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #ffffff;
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  font-optical-sizing: auto;
+  overflow-x: clip;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+section[id] {
+  scroll-margin-top: 96px;
+}
+
+::selection {
+  background: rgba(0, 113, 227, 0.16);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f5f5f7;
+}
+::-webkit-scrollbar-thumb {
+  background: #cfcfd4;
+  border-radius: 999px;
+  border: 2px solid #f5f5f7;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #0071e3;
+}
+
+/* Floating ember particles (dark spotlight band) */
+@keyframes ember-rise {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.9;
+  }
+  100% {
+    transform: translate3d(var(--drift, 0px), -230px, 0) scale(0.3);
+    opacity: 0;
+  }
+}
+
+@keyframes glow-pulse {
+  0%,
+  100% {
+    opacity: 0.45;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.85;
+    transform: scale(1.08);
+  }
+}
+
+@keyframes marquee-x {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes float-y {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-11px);
+  }
+}
